@@ -23,10 +23,46 @@ const routes = createBrowserRouter([
                 element: <Notifications />,
             },
             {
-                path: "*",
-                element: <NoutFound />,
+                path: "messages",
+                element: "Messages",
+            },
+            {
+                path: "grok",
+                element: "Grok",
+            },
+            {
+                path: "bookmarks",
+                element: "Bookmarks",
+            },
+            {
+                path: "jobs",
+                element: "Jobs",
+            },
+            {
+                path: "communities",
+                element: "Communities",
+            },
+            {
+                path: "premium",
+                element: "Premium",
+            },
+            {
+                path: "organizations",
+                element: "Verified Orgs",
+            },
+            {
+                path: "profile",
+                element: "Profile",
+            },
+            {
+                path: "more",
+                element: "",
             },
         ],
+    },
+    {
+        path: "*",
+        element: <NoutFound />,
     },
 ]);
 
